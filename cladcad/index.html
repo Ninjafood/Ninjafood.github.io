@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Clad — Support</title>
+<style>
+  :root { --bg:#14161a; --panel:#1c1f25; --edge:#313640; --text:#eceef2; --dim:#9aa1ad; --accent:#f0a13a; }
+  * { box-sizing:border-box; margin:0; padding:0; }
+  body { background:var(--bg); color:var(--text); font:16px/1.6 -apple-system,"Segoe UI",system-ui,sans-serif; min-height:100vh; display:flex; flex-direction:column; align-items:center; padding:48px 20px; }
+  main { max-width:640px; width:100%; }
+  a { color:var(--accent); }
+  footer { color:var(--dim); font-size:13px; margin-top:28px; }
+  h1 { color:var(--accent); letter-spacing:1px; font-size:28px; margin-bottom:4px; }
+  .tag { color:var(--dim); margin-bottom:32px; }
+  section { background:var(--panel); border:1px solid var(--edge); border-radius:10px; padding:20px 24px; margin-bottom:16px; }
+  h2 { font-size:14px; text-transform:uppercase; letter-spacing:1px; color:var(--dim); margin-bottom:10px; }
+  ul { margin:8px 0 0 20px; }
+  li { margin-bottom:6px; }
+</style>
+</head>
+<body>
+<main>
+  <h1>CLAD</h1>
+  <p class="tag">Prompt-driven CAD for 3D printing — for iPhone and iPad</p>
+
+  <section>
+    <h2>Support</h2>
+    <p>Questions, bug reports, or feature requests? Email
+    <a href="mailto:synacksite@gmail.com">synacksite@gmail.com</a>
+    and include your device model and iOS version. I aim to reply within a few days.</p>
+  </section>
+
+  <section>
+    <h2>Frequently asked</h2>
+    <ul>
+      <li><b>Why does nothing happen when I send a request?</b> Clad needs an AI model to design parts. Open Settings and either add your own API key for Anthropic (Claude), OpenAI, Google Gemini or OpenRouter, point it at a model server on your own network, or choose an on-device model.</li>
+      <li><b>Does Clad include an AI subscription?</b> No. Requests are billed by the AI provider you choose, on your own account with them.</li>
+      <li><b>What works without a model?</b> The starter part, the Params sliders, the Print checks, saved designs and export.</li>
+      <li><b>How do I change one spot on a part?</b> Tap a face, edge or corner to select it, then describe the change. Tap it again to deselect.</li>
+      <li><b>How do I get my part to a printer?</b> Tap Export and choose STL or STEP, then send the file wherever you like from the share sheet.</li>
+      <li><b>Where are my designs kept?</b> On your device, in the Designs list. Deleting the app deletes them.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Privacy</h2>
+    <p>Clad's developer collects no data. Requests go from your device directly to the AI provider you choose. Read the full <a href="privacy.html">privacy policy</a>.</p>
+  </section>
+
+  <footer>© 2026 goblin.services</footer>
+</main>
+</body>
+</html>
