@@ -34,18 +34,23 @@
   <section>
     <h2>Frequently asked</h2>
     <ul>
-      <li><b>Why does nothing happen when I send a request?</b> Clad needs an AI model to design parts. Open Settings and either add your own API key for Anthropic (Claude), OpenAI, Google Gemini or OpenRouter, point it at a model server on your own network, or choose an on-device model.</li>
+      <li><b>Why does nothing happen when I send a request?</b> Clad needs an AI model to design parts. Open Settings and choose one: your own API key for Anthropic (Claude), OpenAI, Google Gemini or OpenRouter; a model server on your own network; an on-device model; Apple Intelligence on devices that have it; or an AI on your computer connected over MCP.</li>
+      <li><b>Why does Clad ask before sending my design?</b> The first time you use an outside AI service, a server or a connected AI, Clad shows what will be sent and where, and asks you to allow it. You are asked once for each one.</li>
       <li><b>Does Clad include an AI subscription?</b> No. Requests are billed by the AI provider you choose, on your own account with them.</li>
       <li><b>What works without a model?</b> The starter part, the Params sliders, the Print checks, saved designs and export.</li>
       <li><b>How do I change one spot on a part?</b> Tap a face, edge or corner to select it, then describe the change. Tap it again to deselect.</li>
       <li><b>How do I get my part to a printer?</b> Tap Export and choose STL or STEP, then send the file wherever you like from the share sheet.</li>
+      <li><b>What is goal mode?</b> Tap + next to the message box and choose Goal. The model then keeps improving the design on its own for the number of turns you pick, and stops early when it judges the goal met. Each turn is at least one request to your AI provider.</li>
+      <li><b>Does a request keep going if I switch apps?</b> Yes, for requests to an outside AI service or a server. Clad asks iOS to let it finish, so a reply you are paying for is not lost. On-device models pause until you return.</li>
+      <li><b>How do I connect an AI on my computer (MCP)?</b> In Settings, open the MCP tab, turn the server on and copy the address. Add it to your AI tool as an MCP server of type HTTP. With the MCP tab selected, what you type in Clad's chat goes to that AI, which sends the design back. Clad has to be open, and the computer has to reach your device over the same Wi-Fi or a VPN.</li>
+      <li><b>Why is there a warning about http?</b> Addresses that start with http are not encrypted. That is normal for a model server or MCP connection on your own network, but anyone on that network could read what is sent, so only use it on a network you trust.</li>
       <li><b>Where are my designs kept?</b> On your device, in the Designs list. Deleting the app deletes them.</li>
     </ul>
   </section>
 
   <section>
     <h2>Privacy</h2>
-    <p>Clad's developer collects no data. Requests go from your device directly to the AI provider you choose. Read the full <a href="privacy.html">privacy policy</a>.</p>
+    <p>Clad's developer collects no data. Requests go from your device directly to the AI you choose, and Clad asks your permission before the first one. Read the full <a href="privacy.html">privacy policy</a>.</p>
   </section>
 
   <footer>© 2026 goblin.services</footer>

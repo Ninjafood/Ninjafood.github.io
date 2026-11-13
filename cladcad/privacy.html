@@ -21,7 +21,7 @@
 <body>
 <main>
   <h1>Clad — Privacy Policy</h1>
-  <p class="tag">Effective date: November 12, 2026</p>
+  <p class="tag">Effective date: November 13, 2026</p>
 
   <p>The short version: <b>the developer of Clad collects nothing.</b> Clad has no accounts and no server of its own. To design parts it uses an AI model that you choose, and what you ask for is sent from your device directly to that model's provider.</p>
 
@@ -29,6 +29,7 @@
   <p>Nothing. The developer does not collect, store, receive, sell, or share any personal information, content, or usage data. There are no accounts, no analytics, no advertising, and no tracking of any kind.</p>
 
   <h2>What is sent to the AI provider you choose</h2>
+  <p>Before anything is sent to an outside AI service, a server or a connected AI for the first time, Clad shows what will be sent and where, and asks for your permission. You are asked once for each destination.</p>
   <p>When you send a request, Clad sends the following from your device directly to the provider selected in Settings, using your own API key:</p>
   <ul>
     <li>the text of your request and the conversation about the current design;</li>
@@ -37,8 +38,17 @@
   </ul>
   <p>The providers Clad can connect to are Anthropic (Claude), OpenAI, Google (Gemini) and OpenRouter. This data does not pass through the developer. How a provider handles it is governed by that provider's own terms and privacy policy, under your account with them.</p>
 
-  <h2>Your own server, or an on-device model</h2>
-  <p>If you point Clad at a model server on your own network, requests go only to that server. If you choose an on-device model, requests are processed on your device and are not sent anywhere; the model's files are downloaded once from a public model host.</p>
+  <h2>Your own server</h2>
+  <p>If you point Clad at a model server, the same content goes only to that server, and whoever runs it can see it. If the server's address starts with http, the connection is not encrypted and others on the same network could read it; Clad warns you when that is the case.</p>
+
+  <h2>On-device models and Apple Intelligence</h2>
+  <p>If you choose an on-device model, requests are processed on your device and are not sent anywhere; the model's files are downloaded once from a public model host. If you choose Apple Intelligence, requests are handled by the model built into your device by Apple, under Apple's terms; Clad sends them nowhere else.</p>
+
+  <h2>A connected AI (MCP)</h2>
+  <p>Clad can let an AI tool on another device, such as one on your own computer, connect to it over your network. This is off until you turn it on. While it is on, any tool that has the address shown in Settings can read the current design, its pictures and its print checks, and can change the design. When the MCP tab is selected, what you type in the chat, with any photos or sketches you attach, is also handed to that tool. The tool passes this on to its own AI provider under that provider's terms. The connection is not encrypted, so use it only on a network you trust. To allow connections over Wi-Fi, iOS asks for permission to use the local network.</p>
+
+  <h2>Requests that continue in the background</h2>
+  <p>If you leave the app while a request to an AI service or server is in progress, Clad asks iOS to let it finish so the reply is not lost. Nothing more is sent because of this.</p>
 
   <h2>What stays on your device</h2>
   <p>Your designs, your settings, and any API keys you enter are stored on your device. They are removed when you delete the app.</p>
